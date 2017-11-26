@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meta Site</title>
+    <link rel="stylesheet" href="../stylesheet/meta-style.css">
+    <script src="https://use.fontawesome.com/4459dc85b0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if ($(window).scrollTop() >= 150) {
+                $('nav').addClass('fixed-header');
+            }
+            else {
+                $('nav').removeClass('fixed-header');
+            }
+        });
+
+    </script>
+</head>
+<body class="container">
+    <nav class="nav">
+        <div class="logo">
+            <img src="../stylesheet/images/bcit_logo.png">
+        </div>
+        <ul class="first-nav">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#site">Site-map</a></li>
+            <li><a href="#ration">Rationale</a></li>
+            <li><a href="#">Prototype</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1> Meta Site </h1>
+    </header>
+    <section id="introduction" class="intro">
+        <h3>Intro</h3>
+        <div class="space">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac iaculis quam. Vivamus ut ante varius, fermentum augue a, porta quam. Cras in iaculis tellus, ac venenatis ipsum. Sed mattis mattis pharetra. In viverra scelerisque risus, sit amet rutrum orci sodales a. Maecenas ut dolor eget urna interdum sollicitudin sit amet et risus. Aenean felis erat, porttitor nec mauris nec, consequat porttitor sapien. Duis non ante in risus lacinia ornare. Nunc tincidunt dolor sit amet urna tristique, sit amet scelerisque velit malesuada. Phasellus sed ullamcorper justo. Aliquam dictum cursus est ac ornare. Vivamus lacinia lectus eros, et accumsan eros cursus nec. Cras nec nunc justo. Proin et lobortis orci, vitae tincidunt magna. Curabitur turpis risus, semper in auctor pulvinar, lacinia sed dui.
+
+                Fusce convallis nunc et molestie rhoncus. In lacus orci, ultricies id enim sit amet, pretium venenatis lorem. Etiam nec rhoncus quam, eu pharetra dui. Donec sed tristique lectus, eu suscipit turpis. Etiam vel nunc vitae libero congue pulvinar non ac dui. Vestibulum eu finibus sapien. Pellentesque nec posuere mi, sed pulvinar velit. Nunc eu tempor quam. Integer quis luctus erat. In congue magna in malesuada congue. Curabitur ligula neque, mattis non nulla ut, congue pulvinar tortor. Cras eleifend eros ut nisi varius condimentum. Cras consequat massa libero, eu bibendum metus aliquet ac. Donec tempus ex non elit rutrum, sed placerat enim viverra.
+
+                Aliquam imperdiet sed ipsum dignissim sollicitudin. Cras at congue urna, elementum posuere mi. Ut sagittis consectetur lobortis. Sed imperdiet nulla vel ex consequat euismod. Aliquam erat volutpat. Aliquam a nisl vitae nunc gravida dictum. Ut non sem vel ligula tincidunt sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam orci tortor, interdum eu venenatis ut, feugiat a dolor. Proin velit erat, sodales feugiat sapien vel, congue vulputate odio.</p>
+        </div>
+    </section>
+    <section class="banner">
+        <h3>Our Team: The Commandos</h3>
+        <div class="space">
+            <figure>
+                <img class="photo" src="../stylesheet/images/katelyn.png" alt="Katelyn - Dark Lord of Quality">
+                <figcaption>Katelyn - Dark Lord of Quality</figcaption>
+            </figure>
+            <figure>
+                <img class="photo" src="../stylesheet/images/lilian.png" alt="Lilian - Grand Master Architect">
+                <figcaption>Lilian - Grand Master Architect</figcaption>
+            </figure>
+
+         </div>
+    </section>
+    <section id="site" class="site-map">
+        <h3>COMP1950 Sitemap</h3>
+        <div class="sitemap">
+            <div class="primary">
+                <ul>
+                    <li id="home">
+                        <a href="http://bcitcomp.ca/comp1950/">
+                            <i class="fa fa-home"></i> Home <small>Home page of COMP 1950.</small>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="/about"><i class="fa fa-info-circle"></i> About</a>
+                                <ul>
+                                    <li><a href="/outline"><i class="fa fa-info-circle"></i>Outline</a></li>
+                                    <li><a href="/syllabus"><i class="fa fa-info-circle"></i>Syllabus</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="/lectures"><i class="fa fa-book"></i> Lectures</a>
+                                <ul>
+                                    <li>
+                                        <a href="/lectures/one"><i class="fa fa-book"></i>Lecture One<small>Lecture pages.</small><</a>
+                                        <ul>
+                                            <li><a href="/lectures/one#curriculum" class="multi"><i class="fa fa-calendar"></i>Curriculum</a></li>
+                                            <li><a href="/lectures/one#exercises" class="multi"><i class="fa fa-pencil"></i>Exercises</a></li>
+                                            <li><a href="/lectures/one#homework" class="multi"><i class="fa fa-pencil"></i>Homework</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/lectures/two"><i class="fa fa-book"></i>Lecture Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="/lectures/three"><i class="fa fa-book"></i>Lecture Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="/lectures/..."><i class="fa fa-book"></i>...</a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/project"><i class="fa fa-users"></i> Projects<small>Class projects.</small></a>
+                                <ul>
+                                    <li><a href="/project/outline" class="multi"><i class="fa fa-info-circle"></i>Outline</a></li>
+                                    <li><a href="/project/requirements" class="multi"><i class="fa fa-pencil"></i>Requirements</a></li>
+                                    <li><a href="/project/.." class="multi"><i class="fa fa-pencil"></i>...</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="/contact"><i class="fa fa-phone"></i> Contact</a>
+                            </li>
+                            <li>
+                                <a href="/others"><i class="fa fa-list"></i> Other infomation<small>Other information.</small></a>
+                                <ul>
+                                    <li><a href="/others/1">More Stuff<i class="fa fa-list"></i></a>
+                                        <ul>
+                                            <li><a href="/others/2">Sub list<i class="fa fa-list"></i></a></li>
+                                            <li><a href="/others/2">More sub<i class="fa fa-list"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="secondary">
+                <ul>
+                    <li><a href="http://my.bcit.ca">myBCIT </a></li>
+                    <li><a href="/materials">Course Materials</a></li>
+                    <li><a href="/sitemap">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="ration" class="rationale">
+        <h3>Rationale</h3>
+        <div class="space">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac iaculis quam. Vivamus ut ante varius, fermentum augue a, porta quam. Cras in iaculis tellus, ac venenatis ipsum. Sed mattis mattis pharetra. In viverra scelerisque risus, sit amet rutrum orci sodales a. Maecenas ut dolor eget urna interdum sollicitudin sit amet et risus. Aenean felis erat, porttitor nec mauris nec, consequat porttitor sapien. Duis non ante in risus lacinia ornare. Nunc tincidunt dolor sit amet urna tristique, sit amet scelerisque velit malesuada. Phasellus sed ullamcorper justo. Aliquam dictum cursus est ac ornare. Vivamus lacinia lectus eros, et accumsan eros cursus nec. Cras nec nunc justo. Proin et lobortis orci, vitae tincidunt magna. Curabitur turpis risus, semper in auctor pulvinar, lacinia sed dui.
+
+                Fusce convallis nunc et molestie rhoncus. In lacus orci, ultricies id enim sit amet, pretium venenatis lorem. Etiam nec rhoncus quam, eu pharetra dui. Donec sed tristique lectus, eu suscipit turpis. Etiam vel nunc vitae libero congue pulvinar non ac dui. Vestibulum eu finibus sapien. Pellentesque nec posuere mi, sed pulvinar velit. Nunc eu tempor quam. Integer quis luctus erat. In congue magna in malesuada congue. Curabitur ligula neque, mattis non nulla ut, congue pulvinar tortor. Cras eleifend eros ut nisi varius condimentum. Cras consequat massa libero, eu bibendum metus aliquet ac. Donec tempus ex non elit rutrum, sed placerat enim viverra.
+
+                Aliquam imperdiet sed ipsum dignissim sollicitudin. Cras at congue urna, elementum posuere mi. Ut sagittis consectetur lobortis. Sed imperdiet nulla vel ex consequat euismod. Aliquam erat volutpat. Aliquam a nisl vitae nunc gravida dictum. Ut non sem vel ligula tincidunt sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam orci tortor, interdum eu venenatis ut, feugiat a dolor. Proin velit erat, sodales feugiat sapien vel, congue vulputate odio.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="space">
+        <h4>Copyright &copy; Katelyn & Lillian COMP1950</h4>
+        </div>
+    </footer>
+
+</body>
+</html>
