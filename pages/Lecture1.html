@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>comp 1950 | lecture one: course introduction</title>
+	<link rel="stylesheet" href="../stylesheet/main.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body class="container">
+<header class="header">
+	<h1>Hi There</h1>
+</header>
+<nav class="nav">
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="Lecture1.html">Lectures</a></li>
+		<li><a href="Homework.html">Homework</a></li>
+		<li><a href="#">Calendar</a></li>
+	</ul>
+</nav>
+<aside class="aside">
+	<ul id=>
+		<li><a href="Lecture1.html">01 | tools &amp; standards</a></li>
+		<li><a href="#">02 | html5</a></li>
+		<li><a href="#">03 | css techniques</a></li>
+		<li><a href="#">04 | css layouts</a></li>
+		<li><a href="#">05 | responsive css</a></li>
+		<li><a href="#">06 | css3</a></li>
+		<li><a href="#">07 | javascript frameworks</a></li>
+		<li><a href="#">08 | dynamic content</a></li>
+		<li><a href="#">09 | templating, seo</a></li>
+		<li><a href="#">10 | methodology</a></li>
+		<li><a href="#">11 | project work</a></li>
+	</ul>
+</aside>
+<main class="main">
+<h2>lecture one: course introduction</h2>
+<button class="accordion">Agenda</button>
+<div class="panel">
+	<ul>
+		<li>introduction</li>
+		<li>orientation</li>
+		<li>web development<li>
+		<li>standard based development</li>
+	</ul>
+</div>
+<button class="accordion">Introduction</button>
+<div class="panel">
+	<ul>
+		<li> <b>instructors:</b> Jeff Parker (<a href="mailto:jeffrey_parker@bcit.ca">jeffrey_parker@bcit.ca</a>), Lynda Williams (<a href="mailto:lynda_williams@bcit.ca">lynda_williams@bcit.ca</a>)</li>
+		<li> <b>web site:</b> this is it </li>
+		<li> <b>all about you...</b>
+			<ul>
+				<li> your name </li>
+				<li> your background</li>
+				<li> what do you hope to achieve in this course? Be specific!</li>
+			</ul></li>
+	</ul>
+</div>
+
+<button class="accordion">Tools: Firefox Extensions</button>
+<div class="panel">
+	<p>Extensions are a big part of Firefox, especially considering the background the browser has in web development.</p>
+
+	<p>
+		In fact, web development even has it's own category dedicated to <a href="https://addons.mozilla.org/en-US/firefox/browse/type:1/cat:4">Web and Developer Tools</a>
+	</p>
+
+	<p>
+		One of the best tools for Web Developers is the <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/?src=search">
+		Web Developer toolbar
+	</a>
+	</p>
+
+	<p>The author, Chris Pedrick, maintains a <a href="http://chrispederick.com/work/webdeveloper/">
+		site for the Web Developer extension</a>. He has even created a version for seeral other browsers, though it isn't quite as full-featured.
+
+	</p>
+	<p>Some of the amazing tools this has to offer web developers:
+	</p><ul>
+	<li>Disable styles - by embedded/linked/inline as well as all styles, or just a single sheet</li>
+	<li>Edit CSS &amp; HTML - Make live changes to your CSS or HTML!</li>
+	<li>Images - outlining, file sizes, alt information... lots more</li>
+	<li>Form detail - useful for working with form elements</li>
+	<li>Cookie examination and manipulation</li>
+	<li>Built in validators</li>
+	<li>Line Guides &amp; Rulers</li>
+	<li>Element inspector</li>
+</ul>
+	<p></p>
+
+	<p>
+		<strong>Let's take a quick look at the Web Developer Toolbar</strong>
+	</p>
+	<ul>
+		<li>Install it if you have not already done so</li>
+		<li>Validate the HTML of this page with the Tools tab (Tools &gt; Validate HTML)</li>
+		<li>Validate the CSS of this page with the Tools tab (Tools &gt; Validate CSS)</li>
+		<li>View the CSS of the page (CSS &gt; View)</li>
+	</ul>
+</div>
+<button class="accordion">Browser Based Diagnostic Tools</button>
+<div class="panel">
+		<p>As web pages get more complex, it can become difficult figuring out what is going on. For example, CSS rules that override other CSS rules, if spread across several files, can be challenge to make sense of. Having a diagnostic tool to assist in developing will make it easier to examine every detail of web pages. </p>
+		<ul>
+			<li><a href="http://www.getfirebug.com/" title="Get Firebug!">Diagnostic Tool: Firefox Firebug</a></li>
+			<li><a href="https://developers.google.com/chrome-developer-tools/">Diagnostic Tool: Chrome</a></li>
+			<li> <a href="https://developer.apple.com/safari/tools/">Diagnostic Tool: Safari</a></li>
+		</ul>
+
+		<p>Get familiar with using one of these tools. You will be required to use them in the classes ahead.</p>
+		<p><strong>NOTE:</strong> changes you make with the tool are <strong>client based</strong>, this does not actually affect the HTML/CSS files</p>
+		<p>These tools go beyond outlining, examining and editing into deep troubleshooting of network, javascript and even XHR (XMLHttpRequest).</p>
+</div>
+<button class="accordion">Browser Based Diagnostic Tools</button>
+<div class="panel">
+	<ul>
+		<li>due to be published to the class server by midnight, the night before the next class</li>
+		<li><a href="/_shared_resources_1950/downloads/comp1950homework01.pdf">download the homework</a></li>
+	</ul>
+</div>
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].onclick = function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight){
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		}
+	}
+</script>
+</main>
+<footer class="footer">
+	<h4>Copyright &copy; Katelyn & Lillian COMP1950</h4>
+</footer>
+</body>
+</html>
