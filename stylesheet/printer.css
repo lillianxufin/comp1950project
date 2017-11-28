@@ -1,0 +1,29 @@
+@media print { 
+	#top_bar { 
+	display:none;
+	}
+	#footer_wrapper{
+	display:none;
+	}
+	body{
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	background: none;
+	color: black;
+	font: 16pt Georgia, "Times New Roman", Serif;
+	}
+	h2, h2, h4, h5, h6{ 	
+	page-break-after: avoid;
+	}
+	a:link, a:visited {
+	color: #330099;
+	text-decoration: underline;
+	font-weight: bold;	
+	}
+	a[href^="http://"]:link:after, a[href^="http://"]:visited:after{
+   content: " (URL: " attr(href) ") ";
+   font-size: 90%;
+	}
+}
