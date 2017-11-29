@@ -43,4 +43,8 @@
         font-weight: bolder;
         text-decoration: underline;
     }
+    div.panel {
+        padding: 0;
+        font-size: 12px;
+    }
 }
