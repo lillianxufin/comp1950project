@@ -26,4 +26,21 @@
    content: " (URL: " attr(href) ") ";
    font-size: 90%;
 	}
+	.aside-2{
+		display: none;
+		float: none;
+	}
+	iframe{
+		display: none;
+	}
+    button.accordion {
+        color: black;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
 }
