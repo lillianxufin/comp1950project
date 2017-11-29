@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!--
-Due Date: 2017-11-29
-Project: Final Project on Creating a New Look for BCIT Comp1950 course
-Team: Katelyn and Lillian
-Class: COMP1950 | Thursday night class | 2017 Fall
-Page: Meta Site for the project
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,16 +7,15 @@ Page: Meta Site for the project
     <script src="https://use.fontawesome.com/4459dc85b0.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script>
-	    $(function () {
-		    $(window).scroll(function() {
-			    if ($(window).scrollTop() >= 150) {
-				    $('nav').addClass('fixed-header');
-			    }
-			    else {
-				    $('nav').removeClass('fixed-header');
-			    }
-		    })
-	    });
+        $(window).scroll(function(){
+            if ($(window).scrollTop() >= 150) {
+                $('nav').addClass('fixed-header');
+            }
+            else {
+                $('nav').removeClass('fixed-header');
+            }
+        });
+
     </script>
 </head>
 <body class="container">
@@ -35,87 +27,18 @@ Page: Meta Site for the project
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#site">Site-map</a></li>
             <li><a href="#ration">Rationale</a></li>
-            <li><a href="project.html" target="_blank">Prototype</a></li>
+            <li><a href="project.html">Prototype</a></li>
         </ul>
     </nav>
     <header class="header">
         <h1> Meta Site </h1>
     </header>
     <section id="introduction" class="intro">
-        <h3>Introduction</h3>
+        <h3>Intro</h3>
         <div class="space">
             <p>
-                The team members are Katelyn and Lillian. We share 50/50 contribution on our work in order to
-	            complete the project.
+                The team members are Katelyn and Lillian.
             </p>
-	        <h4>Meta-site:</h4>
-	        <h5>Katelyn's responsibilities:</h5>
-	        <ul>
-		        <li>design</li>
-		        <li>introduction and rational portions</li>
-	        </ul>
-	        <h5>Lillian's responsibilities:</h5>
-	        <ul>
-		        <li>site-map creation</li>
-		        <li>git repo set-up</li>
-	        </ul>
-	        <h4>Proto-type site:</h4>
-	        <h5>Katelyn's responsibilities:</h5>
-	        <ul>
-		        <li>body design</li>
-		        <li>content creation for all project pages</li>
-		        <li>html and css validation</li>
-		        <li>code review</li>
-	        </ul>
-	        <h5>Lillian's responsibilities:</h5>
-	        <ul>
-		        <li>header/footer/menu creation</li>
-		        <li>media css query and responsiveness validation</li>
-		        <li>code review</li>
-		        <li>project submission</li>
-	        </ul>
-	        <h4>All Project's pages and where to find them</h4>
-	        <div class="color">
-	        <p>
-		        <a href="project.html" target="_blank">1| Homepage of the project</a><br>
-		        <a href="resources.html" target="_blank">2| BCIT resources</a><br>
-		        <a href="Homework.html" target="_blank">3| Homework page</a><br>
-		        <a href="lecture_one.html" target="_blank">4| Lecture page</a><br>
-		        <a href="project.html" target="_blank">5| Project Outline</a><br>
-	        </p>
-	        </div>
-	        <h4>Where are these pages on the navigation bar and side bar:</h4>
-
-	        <h5>Homepage: located under</h5>
-		        <ul>
-			        <li>"Home" link on the main navigation</li>
-			        <li>"home" link on the sidebar </li>
-			        <li>"About COMP 1950" link on the navigation</li>
-		        </ul>
-	        <h5>BCIT resources: located under</h5>
-		        <ul>
-			        <li>"resources" link on navigation bar as a sub-menu item from "Resources"</li>
-			        <li>"Meta-site" link can also be found as a sub-menu item from "Resources"</li>
-		        </ul>
-		     <h5>Homework page: located under</h5>
-		        <ul>
-			        <li>"Home work" link on navigation bar as a 2nd level sub-menu item from "Lecture one" under "Lectures"</li>
-			        <li>"Home work" link on navigation bar as a 2nd level sub-menu item from "Lecture three" under "Lectures"</li>
-		        </ul>
-	        <h5>Lecture page: located under</h5>
-		        <ul>
-			        <li>"Agenda" link on navigation bar as a 2nd level sub-menu item from "Lecture one" under "Lectures"</li>
-			        <li>"Lecture one" can also be access on the sidebar of Lecture one page</li>
-		        </ul>
-	        <h5>Project Outline: located under</h5>
-		        <ul>
-			        <li>"Outline" link on the navigation bas a sub-menu item from "Projects"</li>
-		        </ul>
-	        <h5>Others:</h5>
-		        <ul>
-			        <li>"Contact Info" under "About" will direct mail-to the instructor of the course</li>
-			        <li>"Project Questionnaires" under "Projects" directs to built-pdf file</li>
-		        </ul>
         </div>
     </section>
     <section class="banner">
@@ -213,26 +136,12 @@ Page: Meta Site for the project
     <section id="ration" class="rationale">
         <h3>Rationale</h3>
         <div class="space">
-	        <h4>Implementation of BCIT COMP1950 New Layout:</h4>
             <p>
-	            Since we have 2 members in the team, we decide to share the work 50/50 between us. We all contribute in designing and creating the content for the project.
-	            <br>
-	            The box and border around the content on the page are removed and replaced with <b>accordion javascript</b>, so the content will display as the flow of the lecture. By doing this, it will not look so overwhelming to the students when they view the site.
-	            <br>
-	            Instead of have everything listed on the menu on the side, we move the navigation on the header of the page. The students can just hoover their mouse over to view the sub-menu items.
-	            <br>
-	            In addition, we add a sidebar on the left to list all the pages that are related to their current page.
-	            <br>
-	            We also want our site to be responsive and printer-friendly, we add media query in our css file to do the job.
-	            <br>
-	            We add a calender at the bottom  of all pages, so the student can alway know what is next and when they have to hand-in their up-coming homework or assignments.
-            </p>
-	        <h4>Obstacles during the process:</h4>
-	        <p>
-		        As we all have full-time job, it is difficult to meet-up in person. Sometimes, we miss our meeting. However, we will try to catch-up with each others' work online and through git-hub repo.
-		        <br>
-		        Katelyn would like to add a javascript or jquery to perform an auto-complete search box, so the students can look up for pages in the search bar. If there pages are found within the system, it will display as adrop-down list by the bottom of the search bar. However, it is not able to do as we have a limit on time and we are all busy with work and other classes
-	        </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac iaculis quam. Vivamus ut ante varius, fermentum augue a, porta quam. Cras in iaculis tellus, ac venenatis ipsum. Sed mattis mattis pharetra. In viverra scelerisque risus, sit amet rutrum orci sodales a. Maecenas ut dolor eget urna interdum sollicitudin sit amet et risus. Aenean felis erat, porttitor nec mauris nec, consequat porttitor sapien. Duis non ante in risus lacinia ornare. Nunc tincidunt dolor sit amet urna tristique, sit amet scelerisque velit malesuada. Phasellus sed ullamcorper justo. Aliquam dictum cursus est ac ornare. Vivamus lacinia lectus eros, et accumsan eros cursus nec. Cras nec nunc justo. Proin et lobortis orci, vitae tincidunt magna. Curabitur turpis risus, semper in auctor pulvinar, lacinia sed dui.
+
+                Fusce convallis nunc et molestie rhoncus. In lacus orci, ultricies id enim sit amet, pretium venenatis lorem. Etiam nec rhoncus quam, eu pharetra dui. Donec sed tristique lectus, eu suscipit turpis. Etiam vel nunc vitae libero congue pulvinar non ac dui. Vestibulum eu finibus sapien. Pellentesque nec posuere mi, sed pulvinar velit. Nunc eu tempor quam. Integer quis luctus erat. In congue magna in malesuada congue. Curabitur ligula neque, mattis non nulla ut, congue pulvinar tortor. Cras eleifend eros ut nisi varius condimentum. Cras consequat massa libero, eu bibendum metus aliquet ac. Donec tempus ex non elit rutrum, sed placerat enim viverra.
+
+                Aliquam imperdiet sed ipsum dignissim sollicitudin. Cras at congue urna, elementum posuere mi. Ut sagittis consectetur lobortis. Sed imperdiet nulla vel ex consequat euismod. Aliquam erat volutpat. Aliquam a nisl vitae nunc gravida dictum. Ut non sem vel ligula tincidunt sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam orci tortor, interdum eu venenatis ut, feugiat a dolor. Proin velit erat, sodales feugiat sapien vel, congue vulputate odio.</p>
         </div>
     </section>
     <footer class="footer">
