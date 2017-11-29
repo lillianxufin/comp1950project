@@ -414,6 +414,39 @@ div.panel {
 .panel > p > b{
     font-weight: bold;
 }
+.panel > h4{
+    padding-top: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.panel > p > a{
+    display: inline-block;
+    white-space: pre-line;
+    text-decoration: dotted;
+    color: #e74c3c;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.panel > p > a:hover{
+    display: inline-block;
+    white-space: pre-line;
+    text-decoration: dotted;
+    color: #2e67e7;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.panel > p > a:visited{
+    display: inline-block;
+    white-space: pre-line;
+    text-decoration: dotted;
+    color: #0e7f6e;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
 .aside-1 {
     background: gold;
     text-align: left;
