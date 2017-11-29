@@ -219,10 +219,6 @@ body{
   left: auto;
   right: 0;
 }
-#navigation .has-sub ul li {
-  *margin-bottom: -1px;
-    z-index: 2;
-}
 #navigation .has-sub ul li a {
   background: #A6A2A2;
   border-bottom: 1px dotted #847577;
