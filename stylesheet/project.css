@@ -404,7 +404,16 @@ div.panel {
     background: #A6A2A2;
     text-align: left;
 }
-
+.panel > ul > li {
+    list-style: circle;
+    margin-left: 20px;
+}
+.panel > p{
+    white-space: pre-line;
+}
+.panel > p > b{
+    font-weight: bold;
+}
 .aside-1 {
     background: gold;
     text-align: left;
