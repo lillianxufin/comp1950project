@@ -4,9 +4,11 @@
         <title>Layout of webpages</title>
         <meta name="description" content="A layout practice. Homework 4 for BCIT COMP 1950.">
         <meta charset="utf-8" />
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <!--stylsheet-->
         <link rel="stylesheet" href="../stylesheet/project.css" media="screen">
-        <link rel="stylesheet" href="/stylesheet/printer.css" media="print" />
+        <link rel="stylesheet" href="../stylesheet/printer.css" media="print" />
     </head>
     <body>
          <!-- Main session-->
@@ -142,88 +144,56 @@
             </div>
             <div class="clear"><!-- --></div>
             <div id="page_content">
-                <section>
-                       <h1>Homework4 - rich content page layout</h1>
-                       <img src="../photos/32pixel-icons-2.png" alt="display image" />
-                       <div class="clear"><!-- --></div>
-                       <em>Oct 11th 2017</em>
-                       <br /><br />
+                <aside>
+                    <ul id=>
+                        <li><a href="Home.html">home</a></li>
+                        <li><a href="#">about the course</a></li>
+                        <li><a href="#">resources</a></li>
+                    </ul>
+                </aside>
+                <main>
+                    <h2>COMP1950 | Homepage</h2>
+                    <p><b>COMP 1950</b> follows on from <a href="http://www.bcit.ca/study/courses/comp1850">COMP 1850</a> in more depth and introduces new topics and techniques for developing effective web sites.</p>
+                    <p>Students will gain a deeper understanding of HTML and CSS. Topics will include: Current and emerging trends in HTML, detailed use of CSS for layout and presentation, an introduction to JavaScript frameworks such as jQuery, how to leverage Server Side Includes (SSI) for re-usable code, and working with Content Management Systems.</p>
+                    <button class="accordion">Course Goals</button>
+                    <div class="panel">
+                        <ul>
+                            <li>To gain a deeper understanding of HTML, CSS and advanced topics in web development.</li>
+                            <li>To focus on best practices in web page and web site design.</li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Course learning outcomes / competencies</button>
+                    <div class="panel">
+                        <p>Upon successful completion of this course, the student will be able to:</p>
+                        <ul>
+                            <li>Deploy HTML5 and CSS3 effectively for new, old, and future web browsers.</li>
+                            <li>Understand and apply concepts for Search Engine Optimized content (SEO).</li>
+                            <li>Employ Web Standards when building web sites for maximum compatibility.</li>
+                            <li>Create dynamic content using JavaScript frameworks like jQuery.</li>
+                            <li>Implement Server Side techniques for efficient web development.</li>
+                            <li>Create template-driven pages for use in Content Management systems.</li>
+                            <li>Understand basic development methodology.</li>
+                        </ul>
+                    </div>
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5r3mf2pebik95juh5gmurm3mp748olbv%40import.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FVancouver" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    <script>
+		                var acc = document.getElementsByClassName("accordion");
+		                var i;
 
-                        <h2>HEADER2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium euismod lacus in eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam consectetur a elit in mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut dui purus, tempor ac dolor in, eleifend vulputate erat. Nulla fermentum nisi at dignissim vestibulum. Vivamus consequat congue ligula at consectetur.</p>
-
-                        <p><strong>&gt;&gt; Note that this article is now a little old, for more information about homework 4 check <a href="#">Hyperlink</a>. &lt;&lt;</strong></p>
-
-                        <h2>HEADER2</h2>
-                        <p>Duis malesuada quis ligula nec facilisis. Praesent eu neque placerat, suscipit libero in, feugiat arcu. Proin enim tellus, varius ac magna quis, laoreet facilisis dolor. Morbi sit amet metus tellus. Nam sed ullamcorper ex, a finibus risus. Cras non ex quis neque ultricies semper quis vitae velit. Aliquam tortor felis, euismod a velit vitae, lacinia fermentum eros. Aliquam ut sapien in tellus elementum condimentum quis quis sapien. Sed ut nulla augue. Vivamus eget semper nulla. Vivamus iaculis facilisis ligula at convallis. Praesent et tincidunt quam. Donec tellus ipsum, volutpat sed viverra a, dictum in libero. Etiam maximus vulputate gravida. Aenean non leo nulla. Mauris ipsum nulla, pellentesque at urna eu, dapibus auctor erat.</p>
-                           <h3>Header3</h3>
-                           <ul>
-                               <li><a href="#" target="_blank">Link1</a> - Link</li>
-                               <li><a href="#" target="_blank">Link2</a> - Link</li>
-                               <li><a href="#" target="_blank">Link3</a> - Link. Nunc euismod lacinia nunc, in rutrum lorem dapibus et. Mauris facilisis aliquet augue eu malesuada. Cras laoreet fringilla enim ut varius. Quisque vehicula est eget lectus venenatis, eget elementum ante aliquet. Nunc sit amet est volutpat, rhoncus diam non, luctus turpis. Morbi vulputate est in nisi aliquam, at rhoncus leo sollicitudin. Curabitur cursus imperdiet consectetur. Vestibulum ornare, urna non lobortis tincidunt, ligula quam pulvinar est, eget posuere arcu urna eu arcu. Nunc blandit varius libero non pharetra. Praesent varius congue nulla vitae congue. Suspendisse potenti. Vivamus bibendum tincidunt mi ac pellentesque. Ut tincidunt dictum pharetra. Mauris porttitor augue sit amet feugiat elementum.</li>
-                           </ul>
-                </section>
-
-                <section>
-                       <h1>Homework4</h1>
-                       <img src="../photos/32pixel-icons-2.png" alt="display image" />
-                       <div class="clear"><!-- --></div>
-                        <em>Oct 11th 2017</em>
-                       <br /><br />
-
-                        <h2>HEADER2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium euismod lacus in eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam consectetur a elit in mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut dui purus, tempor ac dolor in, eleifend vulputate erat. Nulla fermentum nisi at dignissim vestibulum. Vivamus consequat congue ligula at consectetur.</p>
-
-                        <p><strong>&gt;&gt; Note that this article is now a little old, for more information about homework 4 check <a href="#">Hyperlink</a>. &lt;&lt;</strong></p>
-
-                        <h2>HEADER2</h2>
-                        <p>Duis malesuada quis ligula nec facilisis. Praesent eu neque placerat, suscipit libero in, feugiat arcu. Proin enim tellus, varius ac magna quis, laoreet facilisis dolor. Morbi sit amet metus tellus. Nam sed ullamcorper ex, a finibus risus. Cras non ex quis neque ultricies semper quis vitae velit. Aliquam tortor felis, euismod a velit vitae, lacinia fermentum eros. Aliquam ut sapien in tellus elementum condimentum quis quis sapien. Sed ut nulla augue. Vivamus eget semper nulla. Vivamus iaculis facilisis ligula at convallis. Praesent et tincidunt quam. Donec tellus ipsum, volutpat sed viverra a, dictum in libero. Etiam maximus vulputate gravida. Aenean non leo nulla. Mauris ipsum nulla, pellentesque at urna eu, dapibus auctor erat.</p>
-                           <h3>Header3</h3>
-                           <ul>
-                               <li><a href="#" target="_blank">Link1</a> - Link</li>
-                               <li><a href="#" target="_blank">Link2</a> - Link</li>
-                               <li><a href="#" target="_blank">Link3</a> - Link. Nunc euismod lacinia nunc, in rutrum lorem dapibus et. Mauris facilisis aliquet augue eu malesuada. Cras laoreet fringilla enim ut varius. Quisque vehicula est eget lectus venenatis, eget elementum ante aliquet. Nunc sit amet est volutpat, rhoncus diam non, luctus turpis. Morbi vulputate est in nisi aliquam, at rhoncus leo sollicitudin. Curabitur cursus imperdiet consectetur. Vestibulum ornare, urna non lobortis tincidunt, ligula quam pulvinar est, eget posuere arcu urna eu arcu. Nunc blandit varius libero non pharetra. Praesent varius congue nulla vitae congue. Suspendisse potenti. Vivamus bibendum tincidunt mi ac pellentesque. Ut tincidunt dictum pharetra. Mauris porttitor augue sit amet feugiat elementum.</li>
-                           </ul>
-
-                </section>
-
-                <section>
-                       <h1>Header1</h1>
-                       <img src="../photos/32pixel-icons-2.png" alt="display image" />
-                       <div class="clear"><!-- --></div>
-                       <em>Oct 11th 2017</em>
-                       <br /><br />
-
-                        <h2>HEADER2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium euismod lacus in eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam consectetur a elit in mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut dui purus, tempor ac dolor in, eleifend vulputate erat. Nulla fermentum nisi at dignissim vestibulum. Vivamus consequat congue ligula at consectetur.</p>
-
-                        <p><strong>&gt;&gt; Note that this article is now a little old, for more information about homework 4 check <a href="#">Hyperlink</a>. &lt;&lt;</strong></p>
-
-                        <h2>HEADER2</h2>
-                        <p>Duis malesuada quis ligula nec facilisis. Praesent eu neque placerat, suscipit libero in, feugiat arcu. Proin enim tellus, varius ac magna quis, laoreet facilisis dolor. Morbi sit amet metus tellus. Nam sed ullamcorper ex, a finibus risus. Cras non ex quis neque ultricies semper quis vitae velit. Aliquam tortor felis, euismod a velit vitae, lacinia fermentum eros. Aliquam ut sapien in tellus elementum condimentum quis quis sapien. Sed ut nulla augue. Vivamus eget semper nulla. Vivamus iaculis facilisis ligula at convallis. Praesent et tincidunt quam. Donec tellus ipsum, volutpat sed viverra a, dictum in libero. Etiam maximus vulputate gravida. Aenean non leo nulla. Mauris ipsum nulla, pellentesque at urna eu, dapibus auctor erat.</p>
-                           <h3>Header3</h3>
-                           <ul>
-                               <li><a href="#" target="_blank">Link1</a> - Link</li>
-                               <li><a href="#" target="_blank">Link2</a> - Link</li>
-                               <li><a href="#" target="_blank">Link3</a> - Link. Nunc euismod lacinia nunc, in rutrum lorem dapibus et. Mauris facilisis aliquet augue eu malesuada. Cras laoreet fringilla enim ut varius. Quisque vehicula est eget lectus venenatis, eget elementum ante aliquet. Nunc sit amet est volutpat, rhoncus diam non, luctus turpis. Morbi vulputate est in nisi aliquam, at rhoncus leo sollicitudin. Curabitur cursus imperdiet consectetur. Vestibulum ornare, urna non lobortis tincidunt, ligula quam pulvinar est, eget posuere arcu urna eu arcu. Nunc blandit varius libero non pharetra. Praesent varius congue nulla vitae congue. Suspendisse potenti. Vivamus bibendum tincidunt mi ac pellentesque. Ut tincidunt dictum pharetra. Mauris porttitor augue sit amet feugiat elementum.</li>
-                           </ul>
-              </section>
-              <section>
-                  <!-- Post that contains two columns-->
-                       <h1>Posts</h1>
-                       <div id="post1"><h2>
-                            <a href="#"><img src="../photos/32pixel-icons-2.png" alt="display image" id="postimage1" />Image Link</a>
-                            </h2>
-                            <p>Duis malesuada quis ligula nec facilisis. Praesent eu neque placerat, suscipit libero in, feugiat arcu. Proin enim tellus, varius ac magna quis, laoreet facilisis dolor. Morbi sit amet metus tellus. Nam sed ullamcorper ex, a finibus risus. Cras non ex quis neque ultricies semper quis vitae velit. Aliquam tortor felis, euismod a velit vitae, lacinia fermentum eros. Aliquam ut sapien in tellus elementum condimentum quis quis sapien. Sed ut nulla augue. Vivamus eget semper nulla. Vivamus iaculis facilisis ligula at convallis. Praesent et tincidunt quam. Donec tellus ipsum, volutpat sed viverra a, dictum in libero. Etiam maximus vulputate gravida. Aenean non leo nulla. Mauris ipsum nulla, pellentesque at urna eu, dapibus auctor erat.</p>
-                        </div>
-                      <div id="post2"><h2>
-                           <a href="#"><img src="../photos/32pixel-icons-2.png" alt="display image" id="postimage2" />Image Link</a>
-                            </h2>
-                              <p>Duis malesuada quis ligula nec facilisis. Praesent eu neque placerat, suscipit libero in, feugiat arcu. Proin enim tellus, varius ac magna quis, laoreet facilisis dolor. Morbi sit amet metus tellus. Nam sed ullamcorper ex, a finibus risus. Cras non ex quis neque ultricies semper quis vitae velit. Aliquam tortor felis, euismod a velit vitae, lacinia fermentum eros. Aliquam ut sapien in tellus elementum condimentum quis quis sapien. Sed ut nulla augue. Vivamus eget semper nulla. Vivamus iaculis facilisis ligula at convallis. Praesent et tincidunt quam. Donec tellus ipsum, volutpat sed viverra a, dictum in libero. Etiam maximus vulputate gravida. Aenean non leo nulla. Mauris ipsum nulla, pellentesque at urna eu, dapibus auctor erat.</p>
-                        </div>            
-                </section>
-        </div>
-
+		                for (i = 0; i < acc.length; i++) {
+			                acc[i].onclick = function() {
+				                this.classList.toggle("active");
+				                var panel = this.nextElementSibling;
+				                if (panel.style.maxHeight){
+					                panel.style.maxHeight = null;
+				                } else {
+					                panel.style.maxHeight = panel.scrollHeight + "px";
+				                }
+			                }
+		                }
+                    </script>
+                </main>
+            </div>
         </div>
         <!--Footer-->
         <div id="footer_wrapper">
