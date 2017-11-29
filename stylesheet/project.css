@@ -342,7 +342,7 @@ body{
     margin-bottom: 5px;
     width:100%;
     text-align: center; 
-    font-weight: none;
+    font-weight: normal;
 }
 /*sprite classes. */
 .sprite_face_shift {
