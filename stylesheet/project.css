@@ -63,7 +63,7 @@ body{
     width:-moz-calc(100% - 100px);
     width:-webkit-calc(100% - 100px);
     width:calc(100% - 100px);
-    padding:50px;
+    padding: 50px;
 }
 
 #top_bar {
@@ -344,6 +344,109 @@ body{
     text-align: center; 
     font-weight: normal;
 }
+
+/** -------------------ACCORDION STYLE------------------- **/
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: 0.4s;
+    height: 40px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/** -------------------BODY CONTAINER------------------- **/
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: normal;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: #CFD2CD;
+    text-align: left;
+}
+.header > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer {
+    background: #CFD2CD;
+}
+
+.main {
+    text-align: left;
+    background: #A6A2A2;
+    text-align: left;
+}
+
+.aside-1 {
+    background: gold;
+    text-align: left;
+}
+
+.aside-2 {
+    background: #847577;
+    text-align: left;
+}
+.aside-2 > ul{
+    list-style: none;
+}
+.aside-2 > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.aside-2 > ul > li > a:hover{
+    text-decoration: none;
+    color: tomato;
+}
+.aside-2 > ul > li > a:visited{
+    text-decoration: none;
+    color: #1756ad;
+}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+
+}
+
+@media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; }
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+}
+iframe{
+    margin-top: 10px;
+}
+
 /*sprite classes. */
 .sprite_face_shift {
     background: url(../photos/image_sprites.png);
@@ -455,6 +558,19 @@ body{
     transform: rotate(-90deg);
 }
 
+@media screen and (max-width: 750px) {
+    iframe {width: 450px; height: 450px}
+}
+@media screen and (max-width: 600px) {
+    iframe {width: 300px; height: 300px}
+    button.accordion{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 445px) {
+    iframe {width: 200px; height: 200px}
+}
+
 @media screen and (max-width: 550px) {
     #footer_right, #footer_mid{
         display:none;
@@ -472,7 +588,6 @@ body{
     #top_bar{
         height:400px !important;;
     }
-    
 }
     
 @media screen and (max-width: 815px) {
