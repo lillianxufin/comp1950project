@@ -1,2 +1,3 @@
 # comp1950project
-Homework
+COMP 1950 Project
+Katelyn and Lillian
