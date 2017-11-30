@@ -90,7 +90,7 @@
         color: #ff6347;
         font-weight: 500;
     }
-    .space ul > li > ul > li{
+    .space ul > li{
         list-style: square;
         display: list-item;
     }
